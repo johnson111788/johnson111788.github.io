@@ -170,7 +170,8 @@ a:hover {
   gap: 10px;
 }
 
-.profile-links a {
+.profile-links a,
+.profile-links button {
   display: inline-flex;
   align-items: center;
   gap: 6px;
@@ -184,7 +185,8 @@ a:hover {
   transition: all 0.3s ease;
 }
 
-.profile-links a:hover {
+.profile-links a:hover,
+.profile-links button:hover {
   background: var(--color-text);
   color: var(--color-bg);
   border-color: var(--color-text);
@@ -193,7 +195,8 @@ a:hover {
   text-decoration: none;
 }
 
-.profile-links a i {
+.profile-links a i,
+.profile-links button i {
   font-size: 1.05em;
 }
 
@@ -733,3 +736,37 @@ a:hover {
     font-size: 1.3em;
   }
 }
+
+/* Job-search navigation and research summaries */
+.site-nav { display:flex; flex-wrap:wrap; gap:12px 28px; padding:18px 0; border-top:1px solid var(--color-border); border-bottom:1px solid var(--color-border); }
+.site-nav a { font-size:.9rem; font-weight:500; }
+.opportunities { padding:14px 18px; margin:0 0 18px; border-left:3px solid var(--color-accent); background:var(--color-bg-alt); border-radius:0 8px 8px 0; font-size:.92em; }
+.project-summary { font-size:.93em; line-height:1.7; margin:8px 0 12px; }
+.background { font-size:.87em !important; }
+.exp-focus { margin-top:6px; color:var(--color-text-muted); font-size:.86em; }
+.archive summary, .news-archive summary { cursor:pointer; padding:16px 0; font-weight:500; color:var(--color-accent); }
+.news-list { max-height:none; overflow:visible; }
+.news-archive .news-list { max-height:340px; overflow-y:auto; }
+.reveal { opacity:1; transform:none; }
+.js-enabled .reveal:not(.visible) { opacity:0; transform:translateY(20px); }
+@media (prefers-reduced-motion:reduce) {
+ *, *::before, *::after { animation:none !important; transition:none !important; scroll-behavior:auto !important; }
+ .animate-in, .profile-photo, .js-enabled .reveal:not(.visible) { opacity:1 !important; transform:none !important; }
+}
+
+@media (max-width:600px) { .profile-photo img { width:128px; height:160px; object-fit:cover; } }
+
+/* Email copies directly and keeps the same styling as profile links. */
+.profile-links button { font-family:inherit; line-height:inherit; cursor:pointer; }
+#copy-email { position:relative; justify-content:center; }
+#copy-email i { width:1em; text-align:center; }
+.email-label-size { position:relative; display:inline-block; }
+.email-label-size::before { content:"Email"; visibility:hidden; }
+#email-button-label { position:absolute; left:50%; top:0; transform:translateX(-50%); white-space:nowrap; }
+#copy-email.is-copied i { visibility:hidden; }
+#copy-email.is-copied .email-label-size { position:static; }
+#copy-email.is-copied #email-button-label { top:50%; transform:translate(-50%, -50%); }
+.profile-links button:focus-visible { outline:2px solid var(--color-accent); outline-offset:3px; }
+.email-copy-status { font-size:.85em; color:var(--color-text-muted); }
+.email-copy-status:not(:empty) { margin-top:8px; }
+.email-copy-fallback { max-width:100%; width:290px; margin-top:8px; padding:6px 8px; font:inherit; border:1px solid var(--color-border); border-radius:6px; background:var(--color-card); color:var(--color-text); }
