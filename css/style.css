@@ -122,9 +122,10 @@ a:hover {
 
 .profile-photo img {
   width: 210px;
-  height: auto;
+  height: 262.5px;
   border-radius: 20px;
   object-fit: cover;
+  object-position: center bottom;
   border: 2px solid var(--color-border);
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
