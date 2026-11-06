@@ -59,15 +59,19 @@
     <div class="pub-entry">
       <div class="pub-teaser">
         <video autoplay muted loop playsinline preload="metadata" poster="images/publications/vflash-poster.jpg" aria-label="VFlash: robot traces, dense motion, object localization and sub-task planning">
-          <source src="images/publications/vflash-teaser.mp4" type="video/mp4">
+          <source src="images/publications/vflash-demo-1080p.mp4" type="video/mp4">
         </video>
       </div>
       <div class="pub-details">
         <div class="pub-title" style="font-size:1.5em;">VFlash: Fast, Accurate System-1 Visual Planning for Physical AI</div>
 
-        <p class="project-summary">Flash Primitive Decoding predicts complete visual primitives in parallel, improving geometric accuracy beyond its autoregressive target. It reduces 3D robot trajectory ADE by 42.6% on average, accelerates robot inference by up to 5.2×, and raises MolmoSpaces manipulation success from 62.6% to 70.2%.</p>
-        <div class="pub-authors"><span class="me">Yu-Cheng Chou*</span>, Shihao Wang*, Jin Huang*, Chi-Pin Huang, Chiao-An Yang, Xianzhe Fan, Jing Wang, Zhiqi Li, Yuanguo Kuang, Ruijie Zheng, Johan Bjorck, Linxi “Jim” Fan, Sifei Liu, Hang Su, Abhishek Badki, Lei Zhang, Alan Yuille, Jan Kautz, Zhiding Yu</div>
-        <div class="pub-links"><a href="https://johnson111788.github.io/vflash/" target="_blank" rel="noopener"><i class="fas fa-globe"></i> Project</a></div>
+        <p class="project-summary">VFlash is a System-1 VLM for fast, accurate visual planning in Physical AI. It predicts complete geometric primitives in parallel, from bounding boxes to 3D trajectories and motion. Across robotics and autonomous driving, VFlash improves spatial accuracy and accelerates inference, achieving 42.6% lower average 3D robot trajectory error and up to 5.2× faster robot inference.</p>
+        <div class="pub-authors"><span class="me">Yu-Cheng Chou*</span>, Shihao Wang*, Jin Huang*, Chi-Pin Huang, Chiao-An Yang, Xianzhe Fan, Jing Wang, Zhiqi Li, Yuanguo Kuang, Ruijie Zheng, Johan Bjorck, Sifei Liu, Hang Su, Abhishek Badki, Lei Zhang, Alan Yuille, Linxi “Jim” Fan, Jan Kautz, Zhiding Yu</div>
+        <div class="pub-links">
+          <a href="https://arxiv.org/abs/2611.08449" target="_blank" rel="noopener"><i class="fas fa-file-pdf"></i> PDF</a>
+          <a href="https://research.nvidia.com/labs/lpr/vflash/" target="_blank" rel="noopener"><i class="fas fa-globe"></i> Project</a>
+          <a href="https://github.com/NVlabs/Eagle/tree/main/Embodied" target="_blank" rel="noopener"><i class="fab fa-github"></i> Code</a>
+        </div>
       </div>
     </div>
     <div class="pub-entry">
@@ -78,7 +82,7 @@
       </div>
       <div class="pub-details">
         <div class="pub-title" style="font-size:1.5em;">Captain Safari: A World Engine with Pose-Aligned 3D Memory</div>
-        <p class="project-summary">Pose-aligned 3D memory grounds camera-controlled video generation in observed scene geometry, preserving consistency under strong parallax and aggressive 6-DoF motion. Fixed-size world tokens keep denoising conditioning cost independent of memory length. The model earned 67.3% of 1,500 votes in a five-way human preference study.</p>
+        <p class="project-summary">Captain Safari is a world engine for exploring 3D scenes through camera-controlled video generation. It retrieves pose-aligned 3D memory to preserve scene geometry while following challenging camera paths, including sharp turns and large viewpoint changes. On complex outdoor scenes, Captain Safari improves 3D consistency and camera control, earning 67.3% of 1,500 votes in a five-way human preference study.</p>
         <div class="pub-authors"><span class="me">Yu-Cheng Chou</span>, Xingrui Wang, Yitong Li, Jiahao Wang, Cihang Xie, Alan L Yuille, Junfei Xiao</div>
         <div class="pub-venue">CVPR 2026</div>
         <div class="pub-links">
@@ -94,7 +98,7 @@
       </div>
       <div class="pub-details">
         <div class="pub-title" style="font-size:1.5em;">SpatialReasoner: Towards Explicit and Generalizable 3D Spatial Reasoning</div>
-        <p class="project-summary">Explicit 3D locations and orientations connect perception, geometric computation, and compositional reasoning in VLMs. SFT-to-GRPO post-training improves generalization to unseen spatial questions, reaching 60.3% accuracy on 3DSRBench with a 7B model and outperforming Gemini 2.0 Flash Thinking by 9.2%.</p>
+        <p class="project-summary">SpatialReasoner is a VLM for understanding and reasoning about the 3D world from images. It explicitly represents object locations and orientations, using them to connect visual perception with geometric computation and multi-step reasoning. SpatialReasoner generalizes to unseen spatial questions and achieves 60.3% accuracy on 3DSRBench, outperforming Gemini 2.0 by 9.2%.</p>
         <div class="pub-authors">Wufei Ma*, <span class="me">Yu-Cheng Chou*</span>, Qihao Liu*, Xingrui Wang, Celso de Melo, Jieneng Chen, Jianwen Xie, Alan Yuille</div>
         <div class="pub-venue">NeurIPS 2025</div>
         <div class="pub-links">
